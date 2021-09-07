@@ -14,8 +14,7 @@ function App() {
     setError(null);
     try {
       const response = await fetch('https://swapi.dev/api/films');
-      if (response.status=== 404) {
-        
+      if (response.status=== 404) { 
         throw new Error("something went wrong");
       }
       const data = await response.json();
